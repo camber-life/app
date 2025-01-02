@@ -3,44 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Motorcycle App</title>
+  <title>Camber - Landing Page</title>
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="script.js" defer></script>
-  <!-- Firebase Configuration -->
-  <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Motorcycle App</h1>
-    <nav>
-      <button id="researchTab" class="tab active">Research</button>
-      <button id="shopTab" class="tab">Shop</button>
-      <button id="profileTab" class="tab">Profile</button>
+  <header class="header">
+    <div class="logo">
+      <a href="#">Camber</a>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
     </nav>
   </header>
-
-  <main>
-    <section id="research" class="content active">
-      <h2>Research</h2>
-      <div id="researchData" class="data-container">
-        <p>Loading research data...</p>
-      </div>
-    </section>
-
-    <section id="shop" class="content">
-      <h2>Shop</h2>
-      <div id="shopData" class="data-container">
-        <p>Loading shop data...</p>
-      </div>
-    </section>
-
-    <section id="profile" class="content">
-      <h2>Profile</h2>
-      <div id="profileData" class="data-container">
-        <p>User settings will be added later.</p>
-      </div>
-    </section>
+  <main class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Camber</h1>
+      <p>Your ultimate guide to the thrilling world of motorcycles.</p>
+      <a href="research.html" class="hero-btn">Explore Research</a>
+      <a href="shop.html" class="hero-btn">View Shop</a>
+    </div>
   </main>
 </body>
 </html>
